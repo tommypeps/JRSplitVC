@@ -7,7 +7,18 @@
 //
 
 #import "UIDetailVC.h"
-
+#import "JRSplitVC.h"
 @implementation UIDetailVC
+- (IBAction)fullView:(id)sender {
+    JRSplitVC *JRSplit =(JRSplitVC*) self.splitViewController;
+    if (!self.navigationItem.leftBarButtonItem) {
+        [JRSplit insertDisplayModeButtonAnimated:YES];
+    }else{
+        [JRSplit extractDisplayModeButtonAnimated:YES];
+    }
+    
+    
+    
+}
 
 @end

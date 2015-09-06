@@ -9,11 +9,17 @@
 /* Begin PBXBuildFile section */
 		10F85D271B9CA2790099FC5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F85D261B9CA2790099FC5A /* main.m */; };
 		10F85D2A1B9CA2790099FC5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F85D291B9CA2790099FC5A /* AppDelegate.m */; };
-		10F85D2D1B9CA2790099FC5A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F85D2C1B9CA2790099FC5A /* ViewController.m */; };
 		10F85D301B9CA2790099FC5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10F85D2E1B9CA2790099FC5A /* Main.storyboard */; };
 		10F85D321B9CA2790099FC5A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10F85D311B9CA2790099FC5A /* Images.xcassets */; };
 		10F85D351B9CA2790099FC5A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10F85D331B9CA2790099FC5A /* LaunchScreen.xib */; };
 		10F85D411B9CA27A0099FC5A /* JRSplitVCExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F85D401B9CA27A0099FC5A /* JRSplitVCExampleTests.m */; };
+		10F85D4E1B9CA3CA0099FC5A /* UIListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F85D4D1B9CA3CA0099FC5A /* UIListVC.m */; };
+		10F85D5A1B9CA7F60099FC5A /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 10F85D511B9CA7F60099FC5A /* .gitkeep */; };
+		10F85D5B1B9CA7F60099FC5A /* UIGestureRecognizer+functions.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F85D531B9CA7F60099FC5A /* UIGestureRecognizer+functions.m */; };
+		10F85D5C1B9CA7F60099FC5A /* UISplitViewController+function.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F85D551B9CA7F60099FC5A /* UISplitViewController+function.m */; };
+		10F85D5D1B9CA7F60099FC5A /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 10F85D571B9CA7F60099FC5A /* .gitkeep */; };
+		10F85D5E1B9CA7F60099FC5A /* JRSplitVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F85D591B9CA7F60099FC5A /* JRSplitVC.m */; };
+		10F85D611B9CB5AA0099FC5A /* UIDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F85D601B9CB5AA0099FC5A /* UIDetailVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +38,24 @@
 		10F85D261B9CA2790099FC5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		10F85D281B9CA2790099FC5A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		10F85D291B9CA2790099FC5A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		10F85D2B1B9CA2790099FC5A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		10F85D2C1B9CA2790099FC5A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		10F85D2F1B9CA2790099FC5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		10F85D311B9CA2790099FC5A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		10F85D341B9CA2790099FC5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		10F85D3A1B9CA27A0099FC5A /* JRSplitVCExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JRSplitVCExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10F85D3F1B9CA27A0099FC5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10F85D401B9CA27A0099FC5A /* JRSplitVCExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRSplitVCExampleTests.m; sourceTree = "<group>"; };
+		10F85D4C1B9CA3CA0099FC5A /* UIListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIListVC.h; sourceTree = "<group>"; };
+		10F85D4D1B9CA3CA0099FC5A /* UIListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIListVC.m; sourceTree = "<group>"; };
+		10F85D511B9CA7F60099FC5A /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		10F85D521B9CA7F60099FC5A /* UIGestureRecognizer+functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+functions.h"; sourceTree = "<group>"; };
+		10F85D531B9CA7F60099FC5A /* UIGestureRecognizer+functions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+functions.m"; sourceTree = "<group>"; };
+		10F85D541B9CA7F60099FC5A /* UISplitViewController+function.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISplitViewController+function.h"; sourceTree = "<group>"; };
+		10F85D551B9CA7F60099FC5A /* UISplitViewController+function.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISplitViewController+function.m"; sourceTree = "<group>"; };
+		10F85D571B9CA7F60099FC5A /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		10F85D581B9CA7F60099FC5A /* JRSplitVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSplitVC.h; sourceTree = "<group>"; };
+		10F85D591B9CA7F60099FC5A /* JRSplitVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSplitVC.m; sourceTree = "<group>"; };
+		10F85D5F1B9CB5AA0099FC5A /* UIDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDetailVC.h; sourceTree = "<group>"; };
+		10F85D601B9CB5AA0099FC5A /* UIDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDetailVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +99,12 @@
 			children = (
 				10F85D281B9CA2790099FC5A /* AppDelegate.h */,
 				10F85D291B9CA2790099FC5A /* AppDelegate.m */,
-				10F85D2B1B9CA2790099FC5A /* ViewController.h */,
-				10F85D2C1B9CA2790099FC5A /* ViewController.m */,
 				10F85D2E1B9CA2790099FC5A /* Main.storyboard */,
+				10F85D4C1B9CA3CA0099FC5A /* UIListVC.h */,
+				10F85D4D1B9CA3CA0099FC5A /* UIListVC.m */,
+				10F85D5F1B9CB5AA0099FC5A /* UIDetailVC.h */,
+				10F85D601B9CB5AA0099FC5A /* UIDetailVC.m */,
+				10F85D4F1B9CA7F60099FC5A /* Pod */,
 				10F85D311B9CA2790099FC5A /* Images.xcassets */,
 				10F85D331B9CA2790099FC5A /* LaunchScreen.xib */,
 				10F85D241B9CA2790099FC5A /* Supporting Files */,
@@ -117,6 +136,38 @@
 				10F85D3F1B9CA27A0099FC5A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		10F85D4F1B9CA7F60099FC5A /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				10F85D501B9CA7F60099FC5A /* Assets */,
+				10F85D561B9CA7F60099FC5A /* Classes */,
+			);
+			name = Pod;
+			path = ../../../Pod;
+			sourceTree = "<group>";
+		};
+		10F85D501B9CA7F60099FC5A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				10F85D511B9CA7F60099FC5A /* .gitkeep */,
+				10F85D521B9CA7F60099FC5A /* UIGestureRecognizer+functions.h */,
+				10F85D531B9CA7F60099FC5A /* UIGestureRecognizer+functions.m */,
+				10F85D541B9CA7F60099FC5A /* UISplitViewController+function.h */,
+				10F85D551B9CA7F60099FC5A /* UISplitViewController+function.m */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		10F85D561B9CA7F60099FC5A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				10F85D571B9CA7F60099FC5A /* .gitkeep */,
+				10F85D581B9CA7F60099FC5A /* JRSplitVC.h */,
+				10F85D591B9CA7F60099FC5A /* JRSplitVC.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,7 +252,9 @@
 			files = (
 				10F85D301B9CA2790099FC5A /* Main.storyboard in Resources */,
 				10F85D351B9CA2790099FC5A /* LaunchScreen.xib in Resources */,
+				10F85D5D1B9CA7F60099FC5A /* .gitkeep in Resources */,
 				10F85D321B9CA2790099FC5A /* Images.xcassets in Resources */,
+				10F85D5A1B9CA7F60099FC5A /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +272,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10F85D2D1B9CA2790099FC5A /* ViewController.m in Sources */,
+				10F85D611B9CB5AA0099FC5A /* UIDetailVC.m in Sources */,
+				10F85D5C1B9CA7F60099FC5A /* UISplitViewController+function.m in Sources */,
 				10F85D2A1B9CA2790099FC5A /* AppDelegate.m in Sources */,
+				10F85D4E1B9CA3CA0099FC5A /* UIListVC.m in Sources */,
 				10F85D271B9CA2790099FC5A /* main.m in Sources */,
+				10F85D5B1B9CA7F60099FC5A /* UIGestureRecognizer+functions.m in Sources */,
+				10F85D5E1B9CA7F60099FC5A /* JRSplitVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

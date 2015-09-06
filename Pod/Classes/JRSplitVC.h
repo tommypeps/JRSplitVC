@@ -17,5 +17,6 @@
  */
 //-(void)insertDisplayModeButton:(BOOL)value;
 -(void)insertDisplayModeButtonAnimated:(BOOL)animated;
+-(void)extractDisplayModeButtonAnimated:(BOOL)animated;
 @end
 

@@ -7,8 +7,8 @@
 //
 
 #import "JRSplitVC.h"
-#import "ColorVC.h"
-#import "JRTableViewController.h"
+
+
 #import "UIGestureRecognizer+functions.h"
 
 @interface JRSplitVC () <UISplitViewControllerDelegate>
@@ -55,7 +55,6 @@
 - (void)longPres
 {
     CGFloat f = [_longpres fractionTouch];
-     NSLog(@"%f",f);
     [self setPreferredPrimaryColumnWidthFraction:f];
    
 }
@@ -88,13 +87,6 @@
 //    return UISplitViewControllerDisplayModeAllVisible;
 //}
 
-#pragma mark -
-#pragma mark - ViewControllerDelegate
-#pragma mark -
-
-#pragma mark -
-#pragma mark - test
-#pragma mark -
 -(void)testobserve{
 
     //No funciona por el moomento
@@ -129,6 +121,22 @@
         }
 
     }
+}
+-(void)extractDisplayModeButtonAnimated:(BOOL)animated{
+    if ([self.viewControllers count]>1) {
+        UINavigationController *nc = [self.viewControllers objectAtIndex:[@1 integerValue]];
+        if (nc) {
+            UIViewController *vc   = [nc topViewController];
+            if (vc) {
+                [vc.navigationItem setLeftBarButtonItem:nil];
+                [vc.navigationItem setLeftItemsSupplementBackButton:YES];
+                
+            }
+            
+        }
+        
+    }
+    
 }
 
 @end
