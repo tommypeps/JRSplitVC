@@ -7,6 +7,7 @@
 //
 
 #import "UIListVC.h"
+#import "UIDetailVC.h"
 #import "JRSplitVC.h"
 @interface UIListVC ()
 @property NSArray *list;
@@ -39,7 +40,14 @@
 }
 -(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-     NSLog(@"%d",indexPath.row);
+    NSLog(@"%d",indexPath.row);
+    UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main"
+                                                    bundle:[NSBundle mainBundle ]];
+    
+    UIDetailVC *detailVC = [story instantiateViewControllerWithIdentifier:@"UIDetailVC"];
+    UINavigationController *nc = [UINavigationController new];
+    [nc addChildViewController:detailVC];
+
     switch (indexPath.row) {
         case 0:
         {
@@ -48,17 +56,20 @@
             
             [self showDetailViewController:nc
                                     sender:self];
-            }
+        }
             break;
         case 1:
         {
             NSLog(@"%@",@"1");
             //TODO: get view of StoryBoard
-            UINavigationController *nc = [UINavigationController new];
-            UIViewController *vc = [UIViewController new];
-            [nc addChildViewController:vc];
+//            UINavigationController *nc = [UINavigationController new];
+//            UIViewController *vc = [UIViewController new];
+//            [nc addChildViewController:vc];
+//            [self showDetailViewController:nc
+//                                    sender:self];
             [self showDetailViewController:nc
                                     sender:self];
+
 
         }
             break;

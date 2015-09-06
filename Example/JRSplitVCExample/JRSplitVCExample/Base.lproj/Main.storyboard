@@ -7,7 +7,7 @@
         <!--DetailVC-->
         <scene sceneID="8e1-xX-nku">
             <objects>
-                <viewController id="Tx8-GE-Hzi" customClass="UIDetailVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UIDetailVC" id="Tx8-GE-Hzi" customClass="UIDetailVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1Gb-xi-UJC"/>
                         <viewControllerLayoutGuide type="bottom" id="ROE-SV-Uk9"/>
