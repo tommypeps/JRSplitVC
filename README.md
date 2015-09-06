@@ -1,55 +1,29 @@
-## JRSPLITVC	
+# JRSplitVC
 
-A JRSPLITVC with adaptative layouts 
+[![CI Status](http://img.shields.io/travis/José Roldán Jiménez/JRSplitVC.svg?style=flat)](https://travis-ci.org/José Roldán Jiménez/JRSplitVC)
+[![Version](https://img.shields.io/cocoapods/v/JRSplitVC.svg?style=flat)](http://cocoapods.org/pods/JRSplitVC)
+[![License](https://img.shields.io/cocoapods/l/JRSplitVC.svg?style=flat)](http://cocoapods.org/pods/JRSplitVC)
+[![Platform](https://img.shields.io/cocoapods/p/JRSplitVC.svg?style=flat)](http://cocoapods.org/pods/JRSplitVC)
 
-## Code Example
+## Usage
 
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-Work with storyboard.
+## Requirements
 
-* Install with Cocoapods
-* Drag a UISplitViewController on Storyboard
-* Set custom class 	-> JRSplitVC
+## Installation
 
+JRSplitVC is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
 
-//Imagen
-![](/o)
-
-
-## Motivation
-
-I think by default on iOS
-
-## [Cocoa pods](https://cocoapods.org)
-
-```Objective-C
-use_frameworks!
-
-pod 'JRSplitVC', '~>1.0.0'
-
+```ruby
+pod "JRSplitVC"
 ```
 
+## Author
 
-## Todo
-
-* Work with UISplitViewControllerDisplayModePrimaryOverlay
-* Add displayModeButtonItem
-
-## Contributors
-
-Finding ...
-## Contributing
-
-Anyone who would like to contribute to the project is more than welcome.
-
-* Fork this repo
-* Make your changes
-* Submit pull request
+José Roldán Jiménez, nosoycomplicao@gmail.com
 
 ## License
 
-All source code is licensed under the MIT License.
-
-If you use it, i'll be happy to know about it.
-
-[@tommypeps](https://twitter.com/tommypepss)
+JRSplitVC is available under the MIT license. See the LICENSE file for more info.
