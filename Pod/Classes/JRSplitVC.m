@@ -11,6 +11,7 @@
 
 #import "UIGestureRecognizer+functions.h"
 
+
 @interface JRSplitVC () <UISplitViewControllerDelegate>
 @property (strong, nonatomic) UIGestureRecognizer *longpres;
 //@property CGPoint lastLongpress;
