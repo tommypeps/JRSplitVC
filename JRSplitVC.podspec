@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "JRSplitVC"
-  s.version          = "0.1.5"
+  s.version          = "0.1.6"
   s.summary          = "A UISplitViewController with adaptative layouts"
 
 # This description is used to generate tags and improve search results.
