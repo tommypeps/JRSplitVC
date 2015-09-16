@@ -15,9 +15,6 @@
 		10F85D411B9CA27A0099FC5A /* JRSplitVCExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F85D401B9CA27A0099FC5A /* JRSplitVCExampleTests.m */; };
 		10F85D4E1B9CA3CA0099FC5A /* UIListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F85D4D1B9CA3CA0099FC5A /* UIListVC.m */; };
 		10F85D611B9CB5AA0099FC5A /* UIDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F85D601B9CB5AA0099FC5A /* UIDetailVC.m */; };
-		10F85D761B9CE24F0099FC5A /* UIGestureRecognizer+functions.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F85D701B9CE24F0099FC5A /* UIGestureRecognizer+functions.m */; };
-		10F85D771B9CE24F0099FC5A /* UISplitViewController+function.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F85D721B9CE24F0099FC5A /* UISplitViewController+function.m */; };
-		10F85D781B9CE24F0099FC5A /* JRSplitVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F85D751B9CE24F0099FC5A /* JRSplitVC.m */; };
 		9B8CA962A1FC10687559372F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E995B4F8CDF7EF7FDD8909 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -47,12 +44,6 @@
 		10F85D4D1B9CA3CA0099FC5A /* UIListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIListVC.m; sourceTree = "<group>"; };
 		10F85D5F1B9CB5AA0099FC5A /* UIDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDetailVC.h; sourceTree = "<group>"; };
 		10F85D601B9CB5AA0099FC5A /* UIDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDetailVC.m; sourceTree = "<group>"; };
-		10F85D6F1B9CE24F0099FC5A /* UIGestureRecognizer+functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+functions.h"; sourceTree = "<group>"; };
-		10F85D701B9CE24F0099FC5A /* UIGestureRecognizer+functions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+functions.m"; sourceTree = "<group>"; };
-		10F85D711B9CE24F0099FC5A /* UISplitViewController+function.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISplitViewController+function.h"; sourceTree = "<group>"; };
-		10F85D721B9CE24F0099FC5A /* UISplitViewController+function.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISplitViewController+function.m"; sourceTree = "<group>"; };
-		10F85D741B9CE24F0099FC5A /* JRSplitVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSplitVC.h; sourceTree = "<group>"; };
-		10F85D751B9CE24F0099FC5A /* JRSplitVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSplitVC.m; sourceTree = "<group>"; };
 		42BD842EA572AC99E7E8CFA9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		CFAB33846CD36C5F48C601F2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D0E995B4F8CDF7EF7FDD8909 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,7 +98,6 @@
 				10F85D4D1B9CA3CA0099FC5A /* UIListVC.m */,
 				10F85D5F1B9CB5AA0099FC5A /* UIDetailVC.h */,
 				10F85D601B9CB5AA0099FC5A /* UIDetailVC.m */,
-				10F85D6D1B9CE24F0099FC5A /* Pod */,
 				10F85D311B9CA2790099FC5A /* Images.xcassets */,
 				10F85D331B9CA2790099FC5A /* LaunchScreen.xib */,
 				10F85D241B9CA2790099FC5A /* Supporting Files */,
@@ -139,36 +129,6 @@
 				10F85D3F1B9CA27A0099FC5A /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		10F85D6D1B9CE24F0099FC5A /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				10F85D6E1B9CE24F0099FC5A /* Assets */,
-				10F85D731B9CE24F0099FC5A /* Classes */,
-			);
-			name = Pod;
-			path = ../../../Pod;
-			sourceTree = "<group>";
-		};
-		10F85D6E1B9CE24F0099FC5A /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				10F85D6F1B9CE24F0099FC5A /* UIGestureRecognizer+functions.h */,
-				10F85D701B9CE24F0099FC5A /* UIGestureRecognizer+functions.m */,
-				10F85D711B9CE24F0099FC5A /* UISplitViewController+function.h */,
-				10F85D721B9CE24F0099FC5A /* UISplitViewController+function.m */,
-			);
-			path = Assets;
-			sourceTree = "<group>";
-		};
-		10F85D731B9CE24F0099FC5A /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				10F85D741B9CE24F0099FC5A /* JRSplitVC.h */,
-				10F85D751B9CE24F0099FC5A /* JRSplitVC.m */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		5843C33C714BE9E965862AB7 /* Frameworks */ = {
@@ -323,12 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10F85D781B9CE24F0099FC5A /* JRSplitVC.m in Sources */,
 				10F85D611B9CB5AA0099FC5A /* UIDetailVC.m in Sources */,
 				10F85D2A1B9CA2790099FC5A /* AppDelegate.m in Sources */,
-				10F85D761B9CE24F0099FC5A /* UIGestureRecognizer+functions.m in Sources */,
 				10F85D4E1B9CA3CA0099FC5A /* UIListVC.m in Sources */,
-				10F85D771B9CE24F0099FC5A /* UISplitViewController+function.m in Sources */,
 				10F85D271B9CA2790099FC5A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
