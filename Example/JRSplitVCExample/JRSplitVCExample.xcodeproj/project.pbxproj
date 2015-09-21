@@ -10,7 +10,6 @@
 		10F85D271B9CA2790099FC5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F85D261B9CA2790099FC5A /* main.m */; };
 		10F85D2A1B9CA2790099FC5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F85D291B9CA2790099FC5A /* AppDelegate.m */; };
 		10F85D301B9CA2790099FC5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10F85D2E1B9CA2790099FC5A /* Main.storyboard */; };
-		10F85D321B9CA2790099FC5A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10F85D311B9CA2790099FC5A /* Images.xcassets */; };
 		10F85D351B9CA2790099FC5A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10F85D331B9CA2790099FC5A /* LaunchScreen.xib */; };
 		10F85D411B9CA27A0099FC5A /* JRSplitVCExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F85D401B9CA27A0099FC5A /* JRSplitVCExampleTests.m */; };
 		10F85D4E1B9CA3CA0099FC5A /* UIListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F85D4D1B9CA3CA0099FC5A /* UIListVC.m */; };
@@ -35,7 +34,6 @@
 		10F85D281B9CA2790099FC5A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		10F85D291B9CA2790099FC5A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		10F85D2F1B9CA2790099FC5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		10F85D311B9CA2790099FC5A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		10F85D341B9CA2790099FC5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		10F85D3A1B9CA27A0099FC5A /* JRSplitVCExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JRSplitVCExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10F85D3F1B9CA27A0099FC5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,7 +96,6 @@
 				10F85D4D1B9CA3CA0099FC5A /* UIListVC.m */,
 				10F85D5F1B9CB5AA0099FC5A /* UIDetailVC.h */,
 				10F85D601B9CB5AA0099FC5A /* UIDetailVC.m */,
-				10F85D311B9CA2790099FC5A /* Images.xcassets */,
 				10F85D331B9CA2790099FC5A /* LaunchScreen.xib */,
 				10F85D241B9CA2790099FC5A /* Supporting Files */,
 			);
@@ -232,7 +229,6 @@
 			files = (
 				10F85D301B9CA2790099FC5A /* Main.storyboard in Resources */,
 				10F85D351B9CA2790099FC5A /* LaunchScreen.xib in Resources */,
-				10F85D321B9CA2790099FC5A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
