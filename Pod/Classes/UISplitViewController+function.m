@@ -25,8 +25,8 @@
 }
 -(UIViewController*)masterView
 {
-    if ([self.splitViewController.viewControllers count]) {
-        id vc = self.splitViewController.viewControllers[0];
+    if ([self.viewControllers count]) {
+        id vc = self.viewControllers[0];
         if ([vc isKindOfClass:[UINavigationController class]]) {
             return [vc topViewController];
         }else if ([vc isKindOfClass:[UIViewController class]]){
@@ -39,8 +39,10 @@
 }
 -(UIViewController*)detailView
 {
-    if ([self.splitViewController.viewControllers count] == [@2 intValue]) {
-        id vc = self.splitViewController.viewControllers[1];
+
+    if ([self.viewControllers count] == [@2 intValue]) {
+
+        id vc = self.viewControllers[1];
         if ([vc isKindOfClass:[UINavigationController class]]) {
             return [vc topViewController];
         }else if ([vc isKindOfClass:[UIViewController class]]){
