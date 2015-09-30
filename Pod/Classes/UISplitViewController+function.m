@@ -23,4 +23,32 @@
         
     }
 }
+-(UIViewController*)masterView
+{
+    if ([self.splitViewController.viewControllers count]) {
+        id vc = self.splitViewController.viewControllers[0];
+        if ([vc isKindOfClass:[UINavigationController class]]) {
+            return [vc topViewController];
+        }else if ([vc isKindOfClass:[UIViewController class]]){
+            return vc;
+        }else{
+            return nil;
+        }
+    }
+    return nil;
+}
+-(UIViewController*)detailView
+{
+    if ([self.splitViewController.viewControllers count] == [@2 intValue]) {
+        id vc = self.splitViewController.viewControllers[1];
+        if ([vc isKindOfClass:[UINavigationController class]]) {
+            return [vc topViewController];
+        }else if ([vc isKindOfClass:[UIViewController class]]){
+            return vc;
+        }else{
+            return nil;
+        }
+    }
+    return nil;
+}
 @end
