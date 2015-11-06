@@ -16,7 +16,7 @@
 
 -(void)viewDidLoad
 {
-    self.list = @[@"Full Screen Option",@"Edit with Gesture"];
+    self.list = @[@"Full Screen",@"Full Screen disappear", @"UIPanGestureRecognizer",@"UILongPressGestureRecognizer"];
     self.title =@"JRSSplitVC";
 }
 #pragma mark - UITableViewDelegate
@@ -25,11 +25,15 @@
 
 
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+- (NSInteger)tableView:(UITableView *)tableView
+ numberOfRowsInSection:(NSInteger)section
+{
     return [self.list count];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
     static NSString *cellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier
                                                             forIndexPath:indexPath];
@@ -38,9 +42,9 @@
     [cell.textLabel setText:[self.list objectAtIndex:indexPath.row]];
     return cell;
 }
--(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+    -(void)tableView:(UITableView *)tableView
+didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"%d",indexPath.row);
     UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main"
                                                     bundle:[NSBundle mainBundle ]];
     
@@ -51,22 +55,22 @@
     switch (indexPath.row) {
         case 0:
         {
-            NSLog(@"%@",@"0");
+         
             //TODO: get view of StoryBoard
             
             [self showDetailViewController:nc
                                     sender:self];
+            JRSplitVC *vc = self.splitViewController;
+            [vc insertDisplayModeButtonAnimated:YES];
         }
             break;
         case 1:
         {
-            NSLog(@"%@",@"1");
+
             //TODO: get view of StoryBoard
-//            UINavigationController *nc = [UINavigationController new];
-//            UIViewController *vc = [UIViewController new];
-//            [nc addChildViewController:vc];
-//            [self showDetailViewController:nc
-//                                    sender:self];
+            JRSplitVC *vc = self.splitViewController;
+            [vc extractDisplayModeButtonAnimated:YES];
+
             [self showDetailViewController:nc
                                     sender:self];
 
@@ -74,6 +78,24 @@
         }
             break;
 
+        case 2:
+        {
+
+            UIPanGestureRecognizer *pan =[[UIPanGestureRecognizer alloc]initWithTarget:self.splitViewController
+                                                                                action:@selector(changePreferredPrimaryColumnWidth)];
+            [self.splitViewController setValue:pan
+                                        forKey:@"longpres"];
+        }
+            break;
+        case 3:
+        {
+            UILongPressGestureRecognizer *longpress = [[UILongPressGestureRecognizer alloc] initWithTarget:self.splitViewController
+                                                                                                    action:@selector(changePreferredPrimaryColumnWidth)];
+            [self.splitViewController setValue:longpress
+                                        forKey:@"longpres"];
+
+        }
+            break;
         default:
             break;
     }
