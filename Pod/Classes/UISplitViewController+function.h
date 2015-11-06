@@ -10,4 +10,6 @@
 
 @interface UISplitViewController (function)
 -(void)insertDisplayModeButtonAnimated2:(BOOL)animated;
+-(UIViewController*)masterView;
+-(UIViewController*)detailView;
 @end

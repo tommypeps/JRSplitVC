@@ -9,6 +9,14 @@
 #import "UIDetailVC.h"
 #import "JRSplitVC.h"
 @implementation UIDetailVC
+- (IBAction)changeMode:(id)sender {
+    if (self.splitViewController.displayMode == 3) {
+        [self.splitViewController setPreferredDisplayMode:UISplitViewControllerDisplayModeAutomatic];
+    }else{
+        [self.splitViewController setPreferredDisplayMode:self.splitViewController.displayMode +1];
+    }
+
+}
 - (IBAction)fullView:(id)sender {
     JRSplitVC *JRSplit =(JRSplitVC*) self.splitViewController;
     if (!self.navigationItem.leftBarButtonItem) {
@@ -20,5 +28,7 @@
     
     
 }
+
+
 
 @end
