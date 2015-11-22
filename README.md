@@ -11,6 +11,20 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+
+```Objective-C
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // Override point for customization after application launch.
+
+    JRSplitVC  *vc =[[JRSplitVC alloc] initWithStoryBoardID:<#@StoryBoardFile#>
+                                   withPrimaryViewCollapsed:<#@StoryBoardID#>
+                                      withPrimaryViewExpand:<#@StoryBoardID#>];
+    [self.window setRootViewController:vc];
+    return YES;
+}
+
+```
+now JRSplitVC work with StoryboardID, and start to implementing UISplitViewDelegate
 ## Installation
 
 JRSplitVC is available through [CocoaPods](http://cocoapods.org). To install
