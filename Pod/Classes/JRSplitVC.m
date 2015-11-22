@@ -179,6 +179,7 @@ collapseSecondaryViewController:(UIViewController *)secondaryViewController
     }else{
         return  [UIViewController new];
     }
+    return  [UIViewController new];
 }
 - (UIViewController *)primaryViewControllerForExpandingSplitViewController:(UISplitViewController *)splitViewController
 {
@@ -196,5 +197,6 @@ collapseSecondaryViewController:(UIViewController *)secondaryViewController
     }else{
         return [UIViewController new];
     }
+    return  [UIViewController new];
 }
 @end
