@@ -18,11 +18,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 
-    JRSplitVC  *vc =[[JRSplitVC alloc] initWithStoryBoardID:@"Main"
-                                   withPrimaryViewCollapsed:@"collapse"
-                                      withPrimaryViewExpand:@"collapse"];
-    [self.window setRootViewController:vc];
-    [vc setStoryboardFile:@"Main"];
+//    JRSplitVC  *vc =[[JRSplitVC alloc] initWithStoryBoardID:@"Main"
+//                                   withPrimaryViewCollapsed:@"collapse"
+//                                      withPrimaryViewExpand:@"collapse"];
+//    [self.window setRootViewController:vc];
+//    [vc setStoryboardFile:@"Main"];
     return YES;
 }
 
