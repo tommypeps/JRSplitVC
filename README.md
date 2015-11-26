@@ -2,7 +2,7 @@
 
 ![Example](images/JRSplitVC)
 
-[![CI Status](http://img.shields.io/travis/José Roldán Jiménez/JRSplitVC.svg?style=flat)](https://travis-ci.org/José Roldán Jiménez/JRSplitVC)
+[![CI Status](http://img.shields.io/travis/José Roldán Jiménez/JRSplitVC.svg?style=flat)](https://travis-ci.org/José Roldán Jiménez/JRSplitVC)
 [![Version](https://img.shields.io/cocoapods/v/JRSplitVC.svg?style=flat)](http://cocoapods.org/pods/JRSplitVC)
 [![License](https://img.shields.io/cocoapods/l/JRSplitVC.svg?style=flat)](http://cocoapods.org/pods/JRSplitVC)
 [![Platform](https://img.shields.io/cocoapods/p/JRSplitVC.svg?style=flat)](http://cocoapods.org/pods/JRSplitVC)
@@ -12,19 +12,7 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 
-```Objective-C
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
 
-    JRSplitVC  *vc =[[JRSplitVC alloc] initWithStoryBoardID:<#@StoryBoardFile#>
-                                   withPrimaryViewCollapsed:<#@StoryBoardID#>
-                                      withPrimaryViewExpand:<#@StoryBoardID#>];
-    [self.window setRootViewController:vc];
-    return YES;
-}
-
-```
-now JRSplitVC work with StoryboardID, and start to implementing UISplitViewDelegate
 ## Installation
 
 JRSplitVC is available through [CocoaPods](http://cocoapods.org). To install
@@ -36,7 +24,7 @@ pod "JRSplitVC"
 
 ## Author
 
-José Roldán Jiménez, nosoycomplicao@gmail.com
+José Roldán Jiménez, nosoycomplicao@gmail.com
 
 ## License
 
