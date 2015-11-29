@@ -18,6 +18,10 @@
 {
     self.list = @[@"Full Screen",@"Full Screen disappear", @"UIPanGestureRecognizer",@"UILongPressGestureRecognizer"];
     self.title =@"JRSSplitVC";
+    JRSplitVC *vc =(JRSplitVC*) self.splitViewController;
+    [vc setStoryboardFile:@"Main"];
+    [vc setPrimaryViewControllerExpand:@"MyMasterViewStorybard"];
+    [vc setPrimaryViewControllerCollapsed:@"MyCustonViewCollapse"];
 }
 #pragma mark - UITableViewDelegate
 
@@ -42,7 +46,7 @@
     [cell.textLabel setText:[self.list objectAtIndex:indexPath.row]];
     return cell;
 }
-    -(void)tableView:(UITableView *)tableView
+-(void)tableView:(UITableView *)tableView
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UIStoryboard *story = [UIStoryboard storyboardWithName:@"Main"
@@ -51,11 +55,11 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
     UIDetailVC *detailVC = [story instantiateViewControllerWithIdentifier:@"UIDetailVC"];
     UINavigationController *nc = [UINavigationController new];
     [nc addChildViewController:detailVC];
-
+    
     switch (indexPath.row) {
         case 0:
         {
-         
+            
             //TODO: get view of StoryBoard
             
             [self showDetailViewController:nc
@@ -66,21 +70,21 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
             break;
         case 1:
         {
-
+            
             //TODO: get view of StoryBoard
             JRSplitVC *vc = self.splitViewController;
             [vc extractDisplayModeButtonAnimated:YES];
-
+            
             [self showDetailViewController:nc
                                     sender:self];
-
-
+            
+            
         }
             break;
-
+            
         case 2:
         {
-
+            
             UIPanGestureRecognizer *pan =[[UIPanGestureRecognizer alloc]initWithTarget:self.splitViewController
                                                                                 action:@selector(changePreferredPrimaryColumnWidth)];
             [self.splitViewController setValue:pan
@@ -93,7 +97,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
                                                                                                     action:@selector(changePreferredPrimaryColumnWidth)];
             [self.splitViewController setValue:longpress
                                         forKey:@"longpres"];
-
+            
         }
             break;
         default:
