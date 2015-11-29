@@ -40,9 +40,18 @@
     }
     return self;
 }
-
+-(instancetype)init{
+    self = [super init];
+    if (self) {
+        
+    }
+    return self;
+}
 - (void)viewDidLoad
 {
+//    self.primaryViewControllerCollapsed = @"test";
+//    self.primaryViewControllerExpand = @"test2";
+//    self.storyboardFile = @"Main";
     [super viewDidLoad];
     [self setDelegate:self];
     [self setPresentsWithGesture:YES];
@@ -162,41 +171,39 @@
 collapseSecondaryViewController:(UIViewController *)secondaryViewController
       ontoPrimaryViewController:(UIViewController *)primaryViewController
 {
-    return YES;
+    return NO;
 }
 -(UIViewController *)primaryViewControllerForCollapsingSplitViewController:(UISplitViewController *)splitViewController
 {
-    if (self.storyboardFile&& self.primaryViewControllerCollapsed) {
-        UIStoryboard *story = [UIStoryboard storyboardWithName:self.storyboardFile
-                                                        bundle:[NSBundle mainBundle]];
-        if (story) {
-            UIViewController *vc = [story instantiateViewControllerWithIdentifier:self.primaryViewControllerCollapsed];
-            UINavigationController *nc = [UINavigationController new];
-            [nc addChildViewController:vc];
-            return nc;
-        }
-
-    }else{
-        return  [UIViewController new];
+    //normmalm,ente hay 2 views
+    if (!self.primaryViewControllerCollapsed) {
+        UINavigationController *nv = [[self viewControllers ] firstObject];
+        //NSArray *list = self.viewControllers;
+        return nv ;
+    }else if (self.primaryViewControllerCollapsed && self.storyboardFile){
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:self.storyboardFile
+                                                             bundle:[NSBundle mainBundle]];
+        return [storyboard instantiateViewControllerWithIdentifier:self.primaryViewControllerCollapsed];
     }
-    return  [UIViewController new];
 }
 - (UIViewController *)primaryViewControllerForExpandingSplitViewController:(UISplitViewController *)splitViewController
 {
-    if (self.storyboardFile&& self.primaryViewControllerExpand) {
-        
-        UIStoryboard *story = [UIStoryboard storyboardWithName:self.storyboardFile
-                                                        bundle:[NSBundle mainBundle]];
-        if (story) {
-            UIViewController *vc = [story instantiateViewControllerWithIdentifier:self.primaryViewControllerExpand];
-            UINavigationController *nc = [UINavigationController new];
-            [nc addChildViewController:vc];
-            return nc;
-        }
-
-    }else{
-        return [UIViewController new];
+   id nv = [[self viewControllers ] lastObject];
+//    NSArray *list = self.viewControllers;
+    
+    if (self.primaryViewControllerExpand && self.storyboardFile) {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:self.storyboardFile
+                                                             bundle:[NSBundle mainBundle]];
+        return [storyboard instantiateViewControllerWithIdentifier:self.primaryViewControllerExpand];
     }
-    return  [UIViewController new];
+    
+    
+    
+    if ([nv respondsToSelector:@selector(topViewController)]) {
+        return  nv ;
+    }else{
+        UINavigationController *nv2 = [[UINavigationController alloc] initWithRootViewController:nv];
+        return nv2;
+    }
 }
 @end
