@@ -11,8 +11,15 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+### new customview on collapseview
+Custom primary view
 
-
+``` Objective-C
+    self.primaryViewControllerCollapsed = @"MyCustonViewCollapse";
+    self.primaryViewControllerExpand = @"MyMasterViewStorybard";
+    self.storyboardFile = @"MyStoryBoardFile";
+```
+![Example](images/JRSplitVC2)
 ## Installation
 
 JRSplitVC is available through [CocoaPods](http://cocoapods.org). To install
