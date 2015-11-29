@@ -49,8 +49,8 @@
 }
 - (void)viewDidLoad
 {
-//    self.primaryViewControllerCollapsed = @"test";
-//    self.primaryViewControllerExpand = @"test2";
+//    self.primaryViewControllerCollapsed = @"MyCustonViewCollapse";
+//    self.primaryViewControllerExpand = @"MyMasterViewStorybard";
 //    self.storyboardFile = @"Main";
     [super viewDidLoad];
     [self setDelegate:self];
@@ -188,17 +188,15 @@ collapseSecondaryViewController:(UIViewController *)secondaryViewController
 }
 - (UIViewController *)primaryViewControllerForExpandingSplitViewController:(UISplitViewController *)splitViewController
 {
-   id nv = [[self viewControllers ] lastObject];
-//    NSArray *list = self.viewControllers;
-    
+    id nv = [[self viewControllers ] lastObject];
     if (self.primaryViewControllerExpand && self.storyboardFile) {
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:self.storyboardFile
                                                              bundle:[NSBundle mainBundle]];
-        return [storyboard instantiateViewControllerWithIdentifier:self.primaryViewControllerExpand];
+        UINavigationController *nc = [UINavigationController new];
+        UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:self.primaryViewControllerExpand];
+        [nc addChildViewController:vc];
+        return nc;
     }
-    
-    
-    
     if ([nv respondsToSelector:@selector(topViewController)]) {
         return  nv ;
     }else{
