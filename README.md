@@ -19,7 +19,7 @@ Custom primary view
     self.primaryViewControllerExpand = @"MyMasterViewStorybard";
     self.storyboardFile = @"MyStoryBoardFile";
 ```
-![Example](images/JRSplitVC2)
+![Example](images/JRSplitVC3.gif)
 ## Installation
 
 JRSplitVC is available through [CocoaPods](http://cocoapods.org). To install
