@@ -64,7 +64,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
             
             [self showDetailViewController:nc
                                     sender:self];
-            JRSplitVC *vc = self.splitViewController;
+            JRSplitVC *vc = (JRSplitVC*)self.splitViewController;
             [vc insertDisplayModeButtonAnimated:YES];
         }
             break;
@@ -72,7 +72,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
         {
             
             //TODO: get view of StoryBoard
-            JRSplitVC *vc = self.splitViewController;
+            JRSplitVC *vc = (JRSplitVC*)self.splitViewController;
             [vc extractDisplayModeButtonAnimated:YES];
             
             [self showDetailViewController:nc
